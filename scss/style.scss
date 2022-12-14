@@ -1,0 +1,122 @@
+// Patron colores
+$principal: #000000;
+$subprincipal: #070d08;
+$secundario: #224229;
+$terceario: #004c33;
+$white: rgb(248, 243, 243);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background: $subprincipal;
+}
+.nav {
+  background: $principal;
+  .nav-icono {
+    #logo {
+      transition: all 300ms;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .nav-link {
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $secundario !important;
+    }
+  }
+
+  .nav-boton-ingresar a {
+    color: $white !important;
+    background-color: $principal !important;
+    border-radius: 2px solid $subprincipal !important;
+
+    &:last-child:hover {
+      color: $secundario !important;
+      background-color: transparent !important;
+      border: 2px solid $secundario;
+    }
+  }
+}
+
+.figure-blokquote p {
+  color: $white !important;
+}
+.texto {
+  h2 {
+    color: $white;
+    &:hover {
+      color: $secundario !important;
+    }
+  }
+  p {
+    color: $white !important;
+    &:hover {
+      color: $secundario !important;
+    }
+  }
+}
+
+#galeria img {
+  transition: all 300ms;
+  width: 100%;
+  height: auto;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.footer {
+  background: $principal;
+}
+
+// Biografia
+.h1 {
+  font-size: 3rem !important;
+  color: $terceario;
+  &:hover {
+    color: $secundario;
+  }
+}
+.parrafo-bi {
+  font-size: 1.5rem !important;
+  color: $white;
+  margin: 1rem !important;
+}
+
+// Discografia
+.parrafo-dis {
+  color: $white;
+  font-size: 1.5rem;
+}
+.sub-tilte {
+  color: $principal;
+  font-size: 2.5rem;
+}
+.iframe {
+  border: 3px solid $principal;
+}
+
+// Guitarras
+.guitar-sub {
+  color: $terceario;
+  font-size: 2.2rem;
+}
+.guitarjem img {
+  transition: all 300ms;
+  width: 100%;
+  height: auto;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+// registro
+.bg {
+  background-image: url(../imagen_/biografia/Steve-Vai9.jpg);
+  background-position: center center;
+  background-size: cover;
+}
